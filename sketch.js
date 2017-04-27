@@ -89,9 +89,14 @@ function showWork() {
 	
   thums = selectAll('img');
   console.log(thums);
-  for (var i = 0;i < 8; i++) {
+  for (var i = 0;i < thums.length; i++) {
     thums[i].style('visibility','visible');
   }
+}
+
+function myFunction() {
+  console.log("logging to console");
+
 }
 
 function showImage1() {

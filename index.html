@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  
   <meta charset="UTF-8">
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
   <!-- uncomment lines below to include extra p5 libraries -->
@@ -36,24 +36,27 @@ border: 4px solid transparent;
 
 .thumbnail span{ /*CSS for enlarged image*/
 position: absolute;
-background-color: rgba(0,0,0,0.5);
+background-color: black;
 padding: 5px;
-left: -1000px;
+left: -2000px;
 
-visibility: hidden;
-color: black;
+
+color: white;
 text-decoration: none;
 }
 
 .thumbnail span img{ /*CSS for enlarged image*/
 border-width: 0;
+height: 80%;
+width: auto;
 padding: 2px;
 }
 
 .thumbnail:hover span{ /*CSS for enlarged image*/
-visibility: visible;
+
 top: 0;
-left: 280px; /*position where enlarged image should offset horizontally */
+left: 320px; /*position where enlarged image should offset horizontally */
+
 z-index: 50;
 }
 
@@ -66,16 +69,16 @@ z-index: 50;
 <body>
 <div class="gallerycontainer">
 <br /><br /><br /><br />
+<a class="thumbnail" href="#thumb" ><img src="vinesThumb.png" border="0" onclick="myFunction()"/><span><img src="vines.png" /><br />This image was made in processing. The "vines" will travel randomly if left untouched, but direction and size can be changed manually to make more interesting compositions.</span></a>
 
-
-<a class="thumbnail" href="#thumb"><img src="Portfo_UFORenegade.png" width="100px" height="66px" border="0" /><span><img src="Portfo_UFORenegade.png" /><br /></span></a>
-
-<br />
-
-
+<a class="thumbnail" href="#thumb" ><img src="alohaThumb.png" border="0" onclick="myFunction()"/><span><img src="aloha.png" /><br />A postcard made by compositing several images and text.</span></a>
 
 <br />
+<a class="thumbnail" href="#thumb" ><img src="elaineThumb.png" border="0" onclick="myFunction()"/><span><img src="elaine.png" /><br />The card is made by compositing illustrations with a photograph to create a more interesting image.</span></a>
 
+<a class="thumbnail" href="#thumb" ><img src="zebraThumb.png" border="0" onclick="myFunction()"/><span><img src="zebra.png" /><br />A mockup magazine cover taking design inspiration from National Geographic.</span></a>
+<br />
+<a class="thumbnail" href="#thumb" ><img src="Portfo_UFORenegadeThumb.png" border="0" onclick="myFunction()"/><span><img src="Portfo_UFORenegade.png" /><br />A mockup of a design for a videogame cover.</span></a>
 </div>
 
 </body>
